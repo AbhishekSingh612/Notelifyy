@@ -1,0 +1,33 @@
+<div class="container">
+    <br>
+    <div class="row justify-content-center display-6">Update TODO:</div>
+    <br>
+
+    <div *ngIf="isFetching" class="loading d-flex justify-content-center align-items-center">
+
+        <div  class="">
+            <div class="spinner-border text-pink" role="status">
+            </div>
+        </div>
+        <div class="sr-only">Loading</div>
+    </div>
+
+
+    <div *ngIf="!isFetching" class="row justify-content-center">
+        <div class="col-10 col-md-6">
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div class="form-group">
+                    <input type="text" name="title" [ngModel]="item.todoTitle" class="form-control" placeholder="Task Title"  required>
+                </div>
+                <br>
+                <div class="form-group">
+                        <textarea class="form-control" [ngModel]="item.todoDescription" name="description" ngModel placeholder="Task Description"  rows="3" required></textarea>
+                </div>
+                <br>
+                <div class="form-group text-center">
+                    <button class="btn btn-outline-dark btn-block">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

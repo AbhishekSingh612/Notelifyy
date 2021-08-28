@@ -1,0 +1,134 @@
+html, body{
+    min-width: 100%;
+}
+
+body{
+    background-color: #14121a !important
+}
+.collection{
+    
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 600px;
+    height: 100%;
+
+}
+
+.cardContainer{
+    position: relative;
+    max-width: 600px;
+    margin: 0 3%;
+    padding: 1rem;
+    /* min-height: 17rem; */
+    min-height: 17rem;
+    /* height: 19.8rem; */
+    background-color: #17151e !important;
+    color:white;
+    border-radius: 10px;
+    box-shadow:  0 -2rem 2rem rgba(0, 0, 0, 0.76) ;
+    transition: all 0.7s;
+
+    /* scroll-snap-align: start; */
+    /* animation: initialize 2s; */
+}
+
+/* @keyframes initialize {
+    0%{
+        /* position: absolute; 
+        top:0;
+    }
+
+    100%{
+        top:initial;
+    }
+    
+} */
+
+.myCard{
+    
+}
+
+.title{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.date{
+    font-size: .7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.description{
+    overflow: hidden;
+    background: linear-gradient(white, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height: 5rem;
+}
+
+
+.author{
+    width: 90%;
+    height: 3rem;
+    /* position: absolute;
+    bottom: 0; */
+    position: relative;
+    margin-top: auto;
+    /* margin: 0 0  1rem 0 !important;  */
+}
+
+.authorImage{
+    padding: 0px !important;
+    width: 3rem !important;
+    border-radius: 50px;
+}
+
+
+.image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: darkgray;
+    opacity: 0.4;
+}
+
+.authorName{
+    align-self: center;
+}
+
+/* .cardContainer{
+    margin-bottom: -14rem;
+}
+
+.cardContainer:hover ~ .cardContainer{
+    /* border: 1px solid yellow;
+    transform: translateY(10rem);
+}*/
+
+.cardContainer + .cardContainer{
+    margin-bottom: -11rem;
+}
+
+.cardContainer:hover:not(:first-child) ~ .cardContainer{
+    border: 1px solid yellow;
+    transform: translateY(11rem);
+}
+
+.cardContainer:first-child{
+    /* border: 1px solid yellowgreen; */
+    margin-bottom: -5rem;
+}
+
+.cardContainer:hover:first-child ~ .cardContainer{
+    /* border: 1px solid yellow; */
+    transform: translateY(5rem);
+}

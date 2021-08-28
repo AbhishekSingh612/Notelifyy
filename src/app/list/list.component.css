@@ -1,0 +1,52 @@
+.btn{
+    border-radius: 30px;
+    height: 1rem;
+    width: 1rem;
+}
+.updateLink{
+    text-decoration: none;
+}
+.container{
+    min-height: 80vh;
+    max-width: 700px;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+}
+
+.list{
+    margin: 0.7rem;
+    padding: 1.6rem;
+    box-shadow: 0 0 5px rgba(48, 39, 0, 0.5);
+    overflow-wrap: break-word;
+    transition: all 0.2s linear;
+}
+
+.row.justify-content-between:hover, .row.justify-content-between:active {
+    box-shadow: 0 0 15px rgba(48, 39, 0, 0.5);
+    margin: 1.6%;
+}
+
+.title{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.desciption{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 0.4rem;
+}
+.del{
+    padding: 0;
+    font-size: calc(0.5rem);
+    text-align: center;
+}
+
+
+.loading{
+    min-height: 90vh;
+    width: 100%;
+}
+
+.text-pink{
+    color:#e66465;
+}

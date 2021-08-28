@@ -1,0 +1,37 @@
+.create{
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    background:linear-gradient(90deg,#e66465,#9198e5); 
+    color: white;
+    /* background-color: #f7cd0c;
+    color:rgb(0, 0, 0); */
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+
+    /* border-top: 2px solid rgba(0, 0, 0, 0.7); */
+}
+
+.display{
+    display: block;
+}
+
+.myNav{
+    font-weight: 700;
+    text-decoration: none;
+    background: linear-gradient(90deg,#e66465,#9198e5); 
+    color: #fff;
+    /* background-color: #f7cd0c;
+    color:rgba(0, 0, 0, 0.829); */
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.7); */
+    margin-bottom: 1rem;
+}
+
+.navbar-brand{
+    color:rgb(255, 255, 255);
+    /* color:black; */
+    text-shadow: 1px;
+}
