@@ -1,10 +1,15 @@
 # Notelifyy
 
+This is a small angular project that demonstrates the CRUD operations.
+
+The front-end was developed using angular 12 and the backend was build using spring boot
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Live Demo 
 
-Click [Here](https://Notelifyy.netlify.com)
+Click [Here](https://Notelifyy.netlify.app)
 
 ## Development server
 
