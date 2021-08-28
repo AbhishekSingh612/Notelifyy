@@ -2,7 +2,7 @@
 
 This is a small angular project that demonstrates the CRUD operations.
 
-The front-end was developed using angular 12 and the backend was build using spring boot
+Fully Responsive front-end of the website was developed using angular 12 and the backend was build using spring boot
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
