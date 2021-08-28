@@ -2,12 +2,19 @@
 
 This is a small angular project that demonstrates the CRUD operations.
 
-Fully Responsive front-end of the website was developed using angular 12 and the backend was build using spring boot
+## Technologies used: 
+  
+  -Angular 12
+  -Bootstrap 5
+  -Spring Boot
+  -H2 Database
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Live Demo 
+
+The build of the website is hosted on Netlify and backend is deployed on Heroku
 
 Click [Here](https://Notelifyy.netlify.app)
 
