@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Live Demo 
 
-Notelifyy.netlify.com
+Click [Here](https://Notelifyy.netlify.com)
 
 ## Development server
 
