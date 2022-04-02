@@ -10,7 +10,7 @@
         <div class="sr-only">Loading</div>
     </div>
 
-    <div *ngIf = "this.service.isEmpty$ | async" class="container d-flex justify-content-center align-items-center">
+    <div *ngIf = "!isFetching && (this.service.isEmpty$ | async)" class="container d-flex justify-content-center align-items-center">
         <div class="row display-6">
             List is Empty! Click Create to create a note!
         </div>

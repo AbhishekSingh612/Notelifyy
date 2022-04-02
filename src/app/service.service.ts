@@ -27,8 +27,11 @@ export class ServiceService{
               this.isEmpty = false;
               this.isEmpty$.next(this.isEmpty);
             }
-          this.list = data;
-          this.list$.next(this.list);
+            setTimeout(()=>{ //Timeout is to see loading for half second
+              this.list = data;
+              this.list$.next(this.list);
+            },500);
+          
         }
       );
     }
