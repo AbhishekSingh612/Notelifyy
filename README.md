@@ -13,7 +13,7 @@ This is a small angular project that demonstrates the CRUD operations.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
 ## Live Demo 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ad973fdf-a469-47db-9102-fe9842c024fc/deploy-status)](https://app.netlify.com/sites/notelifyy/deploys)
 The build of the website is hosted on Netlify and backend is deployed on Heroku
 
 Click [Here](https://Notelifyy.netlify.app)
