@@ -5,9 +5,9 @@ import { ListComponent } from './list/list.component';
 import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
-  {path:'create', component: CreateComponent},
-  {path:'' , component: ListComponent},
-  {path:'update/:id', component: UpdateComponent}
+  { path: 'create', component: CreateComponent },
+  { path: '', component: ListComponent },
+  { path: 'update/:id', component: UpdateComponent }
 ];
 
 @NgModule({

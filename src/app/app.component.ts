@@ -8,13 +8,13 @@ import { ServiceService } from './service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'TodoListApp2';
 
-  constructor(public router: Router) { 
+  constructor(public router: Router) {
   }
 
-  ngOnInit(){
+  ngOnInit() {
   }
 
 

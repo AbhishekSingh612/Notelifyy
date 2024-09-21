@@ -6,11 +6,12 @@
         <div class="col-10 col-md-6">
             <form (ngSubmit)="onSubmit()" #form="ngForm">
                 <div class="form-group">
-                    <input type="text" name="title" ngModel class="form-control" placeholder="Task Title"  required>
+                    <input type="text" name="title" ngModel class="form-control" placeholder="Task Title" required>
                 </div>
                 <br>
                 <div class="form-group">
-                        <textarea class="form-control" name="description" ngModel placeholder="Task Description"  rows="3" required></textarea>
+                    <textarea class="form-control" name="description" ngModel placeholder="Task Description" rows="3"
+                        required></textarea>
                 </div>
                 <br>
                 <div class="form-group text-center">
@@ -20,4 +21,3 @@
         </div>
     </div>
 </div>
-

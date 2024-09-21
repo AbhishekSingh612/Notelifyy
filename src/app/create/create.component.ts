@@ -12,21 +12,21 @@ import { ServiceService } from '../service.service';
 export class CreateComponent implements OnInit {
 
   @ViewChild('form')
-  form!: NgForm; 
+  form!: NgForm;
 
-  item!:Item;
+  item!: Item;
 
-  constructor(private service:ServiceService, private router: Router) { }
+  constructor(private service: ServiceService, private router: Router) { }
 
   ngOnInit(): void {
     this.service.isCreating = true;
   }
 
-  onSubmit(){    
-    if(this.form.invalid)
+  onSubmit() {
+    if (this.form.invalid)
       return;
     this.item = {
-      todoTitle:this.form.value.title,
+      todoTitle: this.form.value.title,
       todoDescription: this.form.value.description
     };
     this.service.createItem(this.item);

@@ -6,5 +6,6 @@
 <router-outlet></router-outlet>
 
 
-<a *ngIf="router.isActive('/create',true) || router.isActive('/update',false) " [routerLink]="['/']" class="create">Cancel</a>
-<a *ngIf="router.isActive('/',true)" [routerLink]="['/create']"  class="create">Create</a>
+<a *ngIf="router.isActive('/create',true) || router.isActive('/update',false) " [routerLink]="['/']"
+  class="create">Cancel</a>
+<a *ngIf="router.isActive('/',true)" [routerLink]="['/create']" class="create">Create</a>

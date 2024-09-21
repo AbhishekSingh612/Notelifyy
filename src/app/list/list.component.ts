@@ -8,33 +8,33 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  
-  isFetching!:boolean;
-  isEmpty:boolean =  true;
 
-  list:Item[] = [];
+  isFetching!: boolean;
+  isEmpty: boolean = true;
 
-  constructor(public service: ServiceService) {  }
+  list: Item[] = [];
+
+  constructor(public service: ServiceService) { }
 
   ngOnInit(): void {
     this.isFetching = this.service.isFetching;
 
-      this.service.list$.subscribe(data=>{
-        this.isFetching = this.service.isFetching;
-        this.list = data;
-        //console.log(data);
-        
-      });
+    this.service.list$.subscribe(data => {
+      this.isFetching = this.service.isFetching;
+      this.list = data;
+      //console.log(data);
 
-      this.service.isEmpty$.subscribe(data=>{
-        this.isEmpty = data;
-        console.log(this.isEmpty);
-        
-      });
-    
+    });
+
+    this.service.isEmpty$.subscribe(data => {
+      this.isEmpty = data;
+      console.log(this.isEmpty);
+
+    });
+
   }
 
-  onDelete(itemId : any){
+  onDelete(itemId: any) {
     console.log(itemId);
     this.service.deleteItem(itemId);
   }
