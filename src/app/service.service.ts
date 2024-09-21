@@ -21,6 +21,7 @@ export class ServiceService {
     //loading the list of todo from the server 
     this.http.getList().subscribe(
       (data) => {
+        data = data.filter(i => i.todoTitle != undefined);
         this.isFetching = false;
         if (data.length > 0) {
           this.isEmpty = false;
@@ -32,6 +33,10 @@ export class ServiceService {
         }, 500);
 
       }
+      // , (error) => {
+      //   this.isFetching = false;
+      //   this.isEmpty$.next(this.isEmpty);
+      // }
     );
   }
 
@@ -48,15 +53,15 @@ export class ServiceService {
 
   updateItem(item: Item) {
     this.http.updateItem(item).subscribe(data => {
-      var index = this.list.map(obj => obj.itemId).indexOf(data.itemId);
+      var index = this.list.map(obj => obj.id).indexOf(data.id);
       this.list.splice(index, 1, data);
       this.list$.next(this.list);
     });
   }
 
-  deleteItem(itemid: number) {
-    this.http.deleteItem(itemid).subscribe(data => {
-      var index = this.list.map(obj => obj.itemId).indexOf(itemid);
+  deleteItem(item: Item) {
+    this.http.deleteItem(item).subscribe(data => {
+      var index = this.list.map(obj => obj.id).indexOf(item.id);
       this.list.splice(index, 1);
       if (this.list.length == 0) {
         this.isEmpty = true;
@@ -66,7 +71,7 @@ export class ServiceService {
     });
   }
 
-  getItem(itemId: number) {
+  getItem(itemId: string) {
     return this.http.getItem(itemId);
   }
 

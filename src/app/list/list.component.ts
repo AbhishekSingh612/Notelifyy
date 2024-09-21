@@ -34,9 +34,9 @@ export class ListComponent implements OnInit {
 
   }
 
-  onDelete(itemId: any) {
-    console.log(itemId);
-    this.service.deleteItem(itemId);
+  onDelete(item: any) {
+    console.log(item);
+    this.service.deleteItem(item);
   }
 
 }

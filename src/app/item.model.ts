@@ -1,5 +1,5 @@
 export interface Item {
-    itemId?: number,
+    id?: string;
     todoTitle: string,
     todoDescription: string,
     date?: Date

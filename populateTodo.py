@@ -3,19 +3,15 @@ import json
 
 
 
-url = "https://mytodolist-angular-app.herokuapp.com/showList"
+url = "https://crud-example.clabhi8.workers.dev/api/items/"
 res = requests.get(url)
 x = json.loads(res.text)
 
-delUrl = "https://mytodolist-angular-app.herokuapp.com/delete/"
 for i in x:
-    itemId = i['itemId']
-    print(delUrl+(str)(itemId))
-    requests.get(delUrl+(str)(itemId))
+    itemId = i['id']
+    print(url+(str)(itemId))
+    requests.delete(url+(str)(itemId))
 
-
-
-url = "https://mytodolist-angular-app.herokuapp.com/create"
 item = {"todoTitle": "", "todoDescription": ""}
 
 dataList = [["Angular CRUD Operations Demo", "Create Read Update Delete Notes"],
